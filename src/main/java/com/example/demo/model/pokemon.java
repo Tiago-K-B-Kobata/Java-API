@@ -1,6 +1,6 @@
 package com.example.demo.model;
 
-public class pokemon {
+public class Pokemon {
     
     private int      dex;
     private String   name;
@@ -8,10 +8,18 @@ public class pokemon {
     private Number   height;
     private Number   weight;
     
-    public pokemon(int dex, String name, Number height, Number weight){
-        this.dex  =   dex;
-        this.name =   name;
-        this.height = height;
-        this.weight = weight;
+    
+    public Pokemon(){
+       
+    }
+    
+    public String getName(){
+        return this.name;
+    }
+    
+    public void setName(String name){
+        this.name = name;
     }
 }
+
+ 
