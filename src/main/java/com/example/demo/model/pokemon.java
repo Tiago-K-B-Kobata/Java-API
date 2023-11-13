@@ -12,6 +12,14 @@ public class Pokemon {
     public Pokemon(){
        
     }
+
+    public int getDex() {
+        return dex;
+    }
+
+    public void setDex(int dex) {
+        this.dex = dex;
+    }
     
     public String getName(){
         return this.name;
