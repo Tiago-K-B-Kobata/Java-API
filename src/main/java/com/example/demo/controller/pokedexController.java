@@ -1,8 +1,10 @@
 package com.example.demo.controller;
 
+import com.example.demo.model.Pokemon;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RequestMapping;
 import com.example.demo.service.PokedexService;
+import java.util.ArrayList;
 
 @RestController
 public class PokedexController {
@@ -12,8 +14,8 @@ public class PokedexController {
     }
     
     @RequestMapping("/poke")
-    public String poke(){
-        return PokedexService.getPoke().getName();
+    public ArrayList<Pokemon> poke(){
+        return PokedexService.getPoke();
     }
     
 }
