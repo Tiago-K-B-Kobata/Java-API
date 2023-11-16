@@ -1,12 +1,14 @@
 package com.example.demo.model;
 
+import java.util.ArrayList;
+
 public class Pokemon {
     
-    private int      dex;
-    private String   name;
-    private String[] types;
-    private Number   height;
-    private Number   weight;
+    private int               dex;
+    private String            name;
+    private ArrayList<String> types;
+    private Number            height;
+    private Number            weight;
     
     
     public Pokemon(){
@@ -45,11 +47,11 @@ public class Pokemon {
         this.weight = weight;
     }
 
-    public String[] getTypes() {
+    public ArrayList<String> getTypes() {
         return types;
     }
 
-    public void setTypes(String[] types) {
+    public void setTypes(ArrayList<String> types) {
         this.types = types;
     }
     
